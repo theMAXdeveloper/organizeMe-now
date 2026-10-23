@@ -39,38 +39,30 @@ header {
 }
 
 .gradient {
-  /* Learn more about creating a linear gradient: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient */
   background: linear-gradient(180deg, #377a9000 88.54%, #63bff040 100%), #FFF;
 }
 
 header,
 section,
 footer {
-  /* Add a Flexbox property to make the content-wrapper a flex parent container. */
-
-  /* Add a Flexbox property to center the contents of each section. */
-
+  display: flex;
+  justify-content: center;
 }
 
 .content-wrapper {
   width: 90%;
   max-width: 1200px;
-  /* Add a Flexbox property to make the content-wrapper a flex parent container. */
-
-  /* Add the Flexbox property flex-flow: row wrap; to allow the flex child items to wrap. */
+  display: flex;
+  flex-flow: row wrap;
 
   margin: 50px 0;
 }
 
 .header-content-wrapper {
-  /* Add a Flexbox property to make the header-content-wrapper a flex parent container. */
-
-  /* Add a Flexbox property to center the contents of the header. */
-
-  /* Add a Flexbox property to align the contents at their center. */
-
-  /* Add the Flexbox property flex-flow: row wrap; to allow the flex child items to wrap. */
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
   width: 100%;
   padding-bottom: 50px;
 }
@@ -85,9 +77,8 @@ footer {
 }
 
 .about-content-wrapper {
-  /* Add a Flexbox property to make the about-content-wrapper a flex parent container. */
-
-  /* Add a Flexbox property to center the paragraph in the header. */
+  display: flex;
+  justify-content: center;
 
 }
 
@@ -96,20 +87,16 @@ footer {
 }
 
 .services-content-wrapper {
-  /* Add a Flexbox property to make the services-content-wrapper a flex parent container. */
-
-  /* Add a justify-content property and value so that any extra space in the parent container is between the child flex items as the layout changes and more than one card is on a row.  */
-
-  /* Add the Flexbox property flex-flow: row wrap; to allow the flex child items to wrap. */
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
 
 }
 
 .services-description {
   width: 100%;
-  /* Add a Flexbox property to make the services-content-wrapper a flex parent container. */
-
-  /* Add flex-direction: column; so that the services card's child flex items are laid out in a column. */
-
+  display: flex;
+  flex-direction: column;
   margin-bottom: 50px;
 }
 
@@ -127,13 +114,10 @@ footer {
 }
 
 .testimonial-content-wrapper {
-  /* Add a Flexbox property to make the testimonial-content-wrapper a flex parent container. */
-
-  /* Add a justify-content property and value so that any extra space if the parent container is between the child flex items.  */
-
-  /* Add the Flexbox property flex-flow: row wrap; to allow the flex child items to wrap. */
-
-  /* Add align-items: flex-start; so that the background adjusts to the height of the testimonial. */
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  align-items: flex-start;
 
 }
 
@@ -146,12 +130,9 @@ footer {
 }
 
 .footer-content-wrapper {
-  /* Add a Flexbox property to make the testimonial-content-wrapper a flex parent container. */
-
-  /* Add a justify-content property and value so that any extra space if the parent container is around the child flex items.  */
-
-  /* Add a Flexbox property to align the contents at their center. */
-
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .contact-wrapper {
@@ -159,11 +140,9 @@ footer {
 }
 
 .icon-wrapper {
-  /* Add a Flexbox property to make the icon-wrapper a flex parent container. */
-
-  /* Add a Flexbox property to center the icons in their parent container. */
-
-  /* Add gap: 20px; to create space between the icons. */
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
 .contact-wrapper i {
