@@ -157,15 +157,13 @@ footer {
 
   .services-description {
     width: 100%;
-    /* Add flex-direction: row; so that the services cards layout changes to a row orientation. */
-
-    /* Add a justify-content property and value so that any extra space if the parent container is between the child flex items.  */
+    flex-direction: row;
+    justify-content: space-between;
 
   }
 
   .wrap-reverse {
-    /* Add flex-direction: row-reverse; to change the direction of the second service */
-
+    flex-direction: row-reverse;
   }
 
   .services-image {
@@ -195,7 +193,7 @@ footer {
 
 @media (min-width: 1200px) {
   .header-content-wrapper {
-    /* Add a justify-content property and value so that any extra space if the parent container is between the h1 and "Book a Consultation link.  */
+    
 
   }
 
